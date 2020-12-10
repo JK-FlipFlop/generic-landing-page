@@ -1,0 +1,45 @@
+.appnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: #f9f9fb;
+    padding: 0;
+}
+
+.appnav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 95%;
+    margin: auto;
+}
+
+.appnav__logo img{
+    width: 130px;
+}
+
+.appnav__links{
+    display: flex;
+    align-items: center;
+}
+
+.appnav__hamburger-menu{
+    display: none;
+}
+
+.appnav__item{
+    margin-left: 20rem
+}
+
+@media screen and (max-width: 768px) {
+    .appnav__list{
+        display: none;
+    }
+
+    .appnav__hamburger-menu{
+        display: block;
+    }
+}

@@ -1,0 +1,72 @@
+.appexplore {
+  padding: var(--paddingBig) var(--padding);
+}
+
+.appexplore__text h2 {
+  font-size: var(--font-lg);
+  text-transform: uppercase;
+  margin-bottom: var(--margin);
+}
+
+.appexplore__text .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+  margin-bottom: var(--margin);
+}
+
+.appexplore__item {
+  border: 1px solid var(--dark-grey);
+  border-radius: 8rem;
+  padding: 12rem 16rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin);
+  position: relative;
+}
+
+.appexplore__item:last-child {
+  margin-bottom: 0;
+}
+
+.appexplore__item h5 {
+  font-size: var(--font-sm);
+}
+
+.appexplore__item .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+}
+
+
+@media screen and (min-width: 769px) {
+  .appexplore {
+    padding: var(--paddingBig);
+  }
+  
+  .appexplore .grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50rem
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appexplore {
+    padding: var(--padding-xl);
+  }
+  
+  .appexplore__text h2 {
+    font-size: 40rem;
+  }
+  
+  .appexplore__text .MuiTypography-subtitle2 {
+    font-size: var(--font-sm);
+  }
+
+  .appexplore__item h5 {
+    font-size: 18rem;
+    margin-bottom: 10rem;
+  }
+  
+  .appexplore__item .MuiTypography-subtitle2 {
+    font-size: var(--font-sm);
+  }
+}

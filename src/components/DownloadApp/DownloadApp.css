@@ -1,0 +1,36 @@
+.downloadapp__text {
+  background: var(--bg-light);
+  padding: var(--paddingBig) var(--padding);
+  text-align: center;
+}
+
+.downloadapp__text h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--margin);
+  text-transform: uppercase;
+}
+
+.downloadapp__text .MuiTypography-subtitle2 {
+  font-size: var(--font-sm);
+}
+
+@media screen and (min-width: 769px) {
+  .downloadapp__text .MuiTypography-subtitle2 {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .downloadapp__text {
+    padding: var(--paddingBig)
+  }
+
+  .downloadapp__text h2 {
+    font-size: var(--font-xl);
+  }
+
+  .downloadapp__text .MuiTypography-subtitle2 {
+    font-size: 18rem;
+  }
+}

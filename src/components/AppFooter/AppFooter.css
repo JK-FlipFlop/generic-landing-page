@@ -1,0 +1,119 @@
+.appfooter__subscribe {
+  background: var(--grey);
+  padding: var(--paddingBig) var(--padding);
+}
+
+.appfooter__subscribe img {
+  width: 120px;
+  margin: var(--margin) 0;
+}
+
+.appfooter__subscribe h2 {
+  font-size: var(--font-md);
+  margin-bottom: var(--margin);
+}
+
+.appfooter__subscribe .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+  margin-bottom: var(--margin);
+}
+
+.appfooter__links {
+  padding: var(--padding);
+}
+
+.appfooter__list{
+    margin-bottom: var(--margin)
+}
+
+.appfooter__item h6 {
+  font-size: var(--font-sm);
+  margin-bottom: 17rem;
+}
+
+.appfooter__item .MuiTypography-subtitle2,
+.appfooter__item-last .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+  margin-bottom: 10rem;
+}
+
+
+.appfooter__social .store__btns {
+  justify-content: flex-start;
+}
+
+.appfooter__social .store__btns img {
+  margin-top: -30rem;
+  margin-left: -0rem;
+}
+
+.appfooter__social h6 {
+  font-size: var(--font-sm);
+  margin-bottom: 10rem;
+}
+
+.social__icons {
+  font-size: 30rem !important;
+  margin: 10rem 15rem var(--margin) 0;
+}
+
+.appfooter__text .MuiTypography-subtitle2,
+.copyright .MuiTypography-subtitle2 {
+  font-size: 12rem;
+  line-height: 1.8;
+  margin-bottom: var(--margin);
+}
+
+.appfooter__text a {
+  color: var(--bg-dark);
+  font-family: "Roboto Bold";
+}
+
+@media screen and (min-width: 600px) {
+  .appfooter__subscribe h2, .appfooter__subscribe .MuiTypography-subtitle2 {
+    max-width: 80%;
+  }
+
+  .appfooter__links .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: var(--margin);
+  }
+
+  .appfooter__social .store__btns img {
+    margin-right: 20rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .appfooter .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .appfooter__subscribe {
+    padding: var(--paddingBig);
+  }
+
+  .appfooter__links .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: var(--marginBig) 0rem var(--margin) 10rem;
+  }
+
+  .appfooter__social, .copyright, .appfooter__text{
+    margin: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appfooter__subscribe h2 {
+    font-size: 32rem;
+  }
+  
+  .appfooter__subscribe .MuiTypography-subtitle2 {
+    font-size: var(--font-sm);
+  }
+}

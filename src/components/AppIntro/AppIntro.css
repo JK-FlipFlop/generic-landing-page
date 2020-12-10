@@ -1,0 +1,112 @@
+.appintro{
+  margin-top: 89rem;
+}
+
+.appintro__text {
+  grid-area: text;
+  background: var(--bg-light);
+  padding: var(--paddingBig) var(--padding);
+}
+
+.appintro__text h2 {
+  text-transform: uppercase;
+  font-size: var(--font-xl);
+  margin: var(--margin) 0;
+}
+
+.appintro__text .MuiTypography-subtitle2 {
+  font-size: var(--font-sm);
+}
+
+.subscribe {
+  padding: var(--padding);
+  text-align: center;
+  grid-area: subscribe;
+  background: var(--white); 
+}
+
+.subscribe h5 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--margin);
+  text-transform: uppercase;
+  padding-top: var(--paddingBig)
+}
+
+.subscribe__form{
+}
+
+.subscribe__input {
+  width: 70%;
+  height: 60rem;
+  margin: 0;
+  padding: 0 20rem;
+  border: 2px solid var(--bg-dark);
+  border-right: none;
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
+  font-size: 16rem;
+  color: var(--text-color);
+  outline: none;
+}
+
+.subscribe__btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -.5px;
+  background: var(--bg-dark);
+  color: #fff;
+  height: 60rem;
+  font-size: 16rem;
+  border-radius: 12rem;
+  white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  padding-left: 40rem;
+  padding-right: 40rem;
+  transition: all .2s ease-in-out;
+  transition-delay: 0s;
+} 
+
+.appintro .appmockup{
+  grid-area: mockup
+}
+
+@media screen and (min-width: 769px) {
+  .appintro .grid{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+        "text   text    mockup"
+        "text   text    mockup"
+        "subscribe    subscribe     mockup";
+  }
+
+  .appintro__text {
+    padding: var(--paddingBig);
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .appintro__text {
+    padding: var(--padding-xl);
+  }
+
+  .appintro .appmockup {
+    padding-top: var(--padding-xl)
+  }
+  
+  .appintro__text h2 {
+    font-size: 60rem;
+  }
+
+  .appintro__text .MuiTypography-subtitle2 {
+    font-size: 18rem;
+  }
+
+  .subscribe h5 {
+    font-size: 40rem;
+  }
+
+}

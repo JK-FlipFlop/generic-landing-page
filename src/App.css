@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("./fonts/Roboto-Medium.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  /* Colors */
+  /* --bg-dark: #16a085; */
+  --bg-dark: #003d2b;
+  --bg-light: #ade6b9;
+  --bg-light-secondary: #1abc9c;
+  /* --text-color: #292E33; */
+  --text-color: #00140f;
+  --dark-grey: #56616b;
+  --grey: #f0f0f0;
+  --green: #2ecc71;
+  --white: #ffffff;
+
+  /* Spacing */
+  --margin-sm: 20rem;
+  --margin: 30rem;
+  --marginBig: 60rem;
+  --padding-sm: 20rem;
+  --padding: 24rem;
+  --paddingBig: 48rem;
+  --padding-xl: 80rem;
+  --border-radius: 20rem;
+
+  /* Font Size */
+  --font-xs: 14rem;
+  --font-sm: 16rem;
+  --font-md: 24rem;
+  --font-lg: 34rem;
+  --font-xl: 48rem;
+}
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc;
+  scroll-margin: 3px;
+  scrollbar-border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+/* resets */
+html {
+  font-size: 1px; /*for using REM units*/
+}
+body {
+  font-size: 16rem;
+  line-height: 1.5;
+  font-family: "Roboto Medium", sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: #f9f9fb;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4,
+.MuiTypography-h5,
+.MuiTypography-h6,
+.MuiTypography-subtitle1,
+.MuiTypography-subtitle2,
+.MuiTypography-body1,
+.MuiTypography-body2,
+.MuiTypography-caption {
+  margin: 0;
+  font-family: "Roboto Medium" !important;
+}
+
+.store__btns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: var(--paddingBig) 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.store__btns img {
+  margin: 0 10rem;
+  cursor: pointer
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.appstore {
+  width: 269px;
+}
+
+.appmockup {
+  text-align: center;
+  background: var(--bg-dark);
+  padding: var(--paddingBig) var(--padding) 0;
+}
+
+.appmockup img {
+  width: 290px;
+  margin-bottom: var(--margin);
+}
+
+/* @media screen and (min-width: 361px) and (max-width: 767px){
+  .store__btns img{
+    margin: 0 10rem;
+    width: 150px !important;
   }
-  to {
-    transform: rotate(360deg);
+} */
+
+@media screen and (max-width: 768px) {
+  /* .appmockup{
+    background: var(--green)
+  } */
+
+  .store__btns img {
+    width: 140px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .store__btns img {
+    width: 140px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    max-width: 95%;
+    margin: auto;
   }
 }

@@ -1,0 +1,180 @@
+/* Pricing section */
+.pricing {
+  position: relative;
+  padding: var(--paddingBig) var(--padding);
+}
+
+.pricing h2 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--margin);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing > .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+  text-align: center;
+  margin-bottom: var(--margin);
+}
+
+.pricing__box__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.highlighted {
+  border: 3px solid var(--bg-dark);
+}
+
+.price__box {
+  max-width: 420px;
+  background: #fff;
+  /* box-shadow: 0 20px 70px 0 rgba(22, 6, 71, 0.1); */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+  margin: var(--margin) 10rem 50rem
+}
+
+.price__box .MuiTypography-h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 2;
+  padding: 5rem;
+  margin: -.4rem -.4rem;
+  font-size: var(--font-sm);
+}
+
+.wrapper {
+  padding: 39rem 30rem;
+}
+
+.highlighted .wrapper .MuiTypography-h3 {
+  color: var(--text-color);
+  font-size: var(--font-xl);
+  margin-bottom: 10rem;
+}
+
+.wrapper .MuiTypography-h3 {
+  color: var(--text-color);
+  font-size: var(--font-xl);
+  margin-bottom: 10rem;
+}
+
+.wrapper .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+  color: var(--dark-grey);
+  line-height: 1.4;
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  padding: 30rem 0 40rem;
+}
+
+.price .MuiTypography-h3,
+.highlighted .wrapper .price .MuiTypography-h3 {
+  color: var(--bg-dark);
+}
+
+.price .MuiTypography-caption {
+  font-size: var(--font-xs);
+  color: var(--dark-grey);
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  padding-left: 5rem;
+}
+
+.line img {
+  width: auto;
+  max-width: 100%;
+}
+
+.wrapper ul {
+  margin: 20px 0 30px;
+  padding: 0;
+  list-style: none;
+  line-height: 1.3;
+}
+
+.wrapper ul li {
+  display: flex;
+  padding: 8rem 0;
+}
+
+.wrapper ul li span {
+  padding: 0.1rem 0;
+}
+
+.wrapper ul li .MuiTypography-subtitle2 {
+  font-size: var(--font-xs);
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  min-width: 20rem;
+  border-radius: 50%;
+  margin-right: 12rem;
+  margin-top: 2rem;
+}
+
+.checkmark .MuiSvgIcon-root {
+  width: 20rem;
+  height: 20rem;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  fill: var(--bg-light);
+}
+
+@media screen and (min-width: 600px) {
+  .pricing__box__wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pricing h2 {
+    font-size: 40rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricing {
+    position: relative;
+    padding: var(--padding-xl);
+  }
+  
+  .pricing h2 {
+    font-size: var(--font-xl);
+  }
+  
+  .pricing > .MuiTypography-subtitle2 {
+    font-size: var(--font-sm);
+  }
+
+  .highlighted .wrapper .MuiTypography-h3,  .wrapper .MuiTypography-h3 {
+    font-size: 50rem;
+  }
+
+  .wrapper ul li .MuiTypography-subtitle2 {
+    font-size: var(--font-sm);
+}
+
+  .price__box {
+    margin: var(--margin) 20rem 50rem;
+  }
+
+  .wrapper {
+    padding: 39rem;
+  }
+}

@@ -1,0 +1,57 @@
+.appcards{
+    padding: var(--paddingBig) var(--padding);
+    background: var(--grey)
+}
+
+.appcards__item{
+    margin-bottom: var(--margin);
+}
+
+.appcards__title{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    margin-bottom: var(--margin);
+}
+
+.appcards__title h4{
+    font-size: var(--font-sm);
+}
+
+.appcards__desc .MuiTypography-subtitle2{
+    font-size: var(--font-xs);
+}
+
+
+@media screen and (min-width: 769px) {
+    .appcards{
+        padding: var(--paddingBig);
+    }
+
+    .appcards__desc .MuiTypography-subtitle2{
+        max-width: 80%;
+        /* margin: auto; */
+    }
+    
+
+    .appcards .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--margin);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .appcards__title h4{
+        font-size: 20rem;
+    }
+
+    .appcards__desc .MuiTypography-subtitle2{
+        font-size: 15rem;
+    }
+
+    .appcards{
+        padding: var(--padding-xl)
+    }
+    
+}
